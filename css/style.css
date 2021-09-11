@@ -1,0 +1,878 @@
+/*==== START OF COMMON CSS ====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sen&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* FONTS NAME: */
+/*
+    font-family: 'Sen', sans-serif; - 400
+
+    font-family: 'Ubuntu', sans-serif; 300, 400, 500, 700 
+*/
+
+*{
+    margin: 00;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clr{
+    clear: both;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+p{
+    line-height: 24px;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:hover, 
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+:root{
+    --selected-theme-color: var(--theme1-color);
+
+    /* --theme1-color: rgb(237, 174, 73); */
+    --theme1-color: #ff4500;
+    --theme2-color: #09814A;
+    --theme3-color: #5438DC;
+    --theme4-color: #4A73E8;
+    --theme5-color: #19a463;
+    --theme6-color: #009DDC;
+
+    /* DARK COLORS */
+    --dark-black: #222;
+    --light-black: #444;
+    --light-black-2: #777;
+
+    /* LIGHT COLORS */
+    --white: #fff;
+    --deep-light-white: #f5f5f5;
+    --extra-light-white: #f1f1f1;
+
+    /* FONTS NAMES */
+    --strong-font: 'Ubuntu', sans-serif;
+    --light-font: 'Sen', sans-serif;
+
+}
+
+/*==== END OF COMMON CSS ====*/
+
+/* ================================== */
+/* =====  SECTION TITLE START  ====== */
+/* ================================== */
+
+.section_title .title_text p {
+	font-family: var(--light-font);
+	color: var(--selected-theme-color);
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.section_title .title_text h2{
+    font-family: var(--strong-font);
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--dark-black);
+    text-transform: capitalize;
+}
+
+.section_title .title_text h2 span{
+    color: var(--selected-theme-color);
+}
+
+/* ================================== */
+/* ======  SECTION TITLE END  ======= */
+/* ================================== */
+
+
+/* ================================== */
+/* ======  THEME BUTTON START  ====== */
+/* ================================== */
+
+.theme_btn{
+    background: var(--selected-theme-color);
+    color: var(--white);
+    font-family: var(--light-font);
+    font-size: 20px;
+    padding: 7px 30px;
+    border: 2px solid var(--selected-theme-color);
+
+    border-radius: 25px ;
+    -webkit-border-radius: 25px ;
+    -moz-border-radius: 25px ;
+    -ms-border-radius: 25px ;
+    -o-border-radius: 25px ;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+
+.theme_btn:hover{
+    color: var(--selected-theme-color);
+    background: var(--white);
+
+}
+    
+
+/* ================================== */
+/* ======  THEME BUTTON START  ====== */
+/* ================================== */
+
+
+
+/* ============================================== */
+/* ===========   NAVBAR AREA START   ============ */
+/* ============================================== */
+.main_menu{
+    padding: 10px 0;
+}
+
+.navbar-toggler img{
+    color: var(--dark-black);
+    height: 40px;
+    width: 40px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    /* position: relative; */
+}
+
+.navbar-toggler img:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.burger_active{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.hamburger_container .icon_bar{
+    position: relative;
+    display: block;
+    background: var(--theme1-color);
+    width: 27px;
+    height: 3px;
+    margin: 4px 0;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+}
+
+.bar1{
+    right: 0px;
+}
+
+.bar2{
+    right: 10px;
+}
+
+.bar3{
+    right: 0px;
+}
+
+.navbar-toggler:hover .hamburger_container .bar2{
+   right: 0px;
+}
+
+.navbar-toggler:hover .bar1{
+    right: 10px;        
+ }
+
+.navbar-toggler:hover .bar3{
+    right: 10px;
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.nav-item a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--light-font);
+    color: #222;
+    text-transform: capitalize;
+
+    margin: 0 13px;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+
+    position: relative;
+}
+
+.nav-item a:hover{
+    color: var(--selected-theme-color);  
+}   
+
+.nav-item a:after {
+    position: absolute;
+    content: '';
+    top: 35px;
+    left: 0;
+    height: 2px;
+    width: 0;
+
+    background: var(--selected-theme-color);
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}
+
+
+.nav-item a.active{
+    color: var(--selected-theme-color);
+}
+
+.nav-item a.active:after{
+    width: 100%;
+}
+
+/* ============================================== */
+/* ============   NAVBAR AREA END   ============= */
+/* ============================================== */
+
+
+
+/* ============================================== */
+/* ===========   BANNER AREA START   ============ */
+/* ============================================== */
+
+.banner_text {
+    /* padding: 0 20px; */
+    margin: 130px 0;
+}
+
+.banner_text span {
+    font-family: var(--light-font);
+    font-size: 30px;
+}
+
+.banner_text h1 {
+    font-family: var(--strong-font);
+    font-weight: 500;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+
+.banner_text h1 span {
+    font-family: var(--strong-font);
+    font-size: 70px;
+    font-weight: 500;
+    color: var(--selected-theme-color);
+
+
+}
+
+.auto_text span {
+    font-family: var(--light-font);
+    font-size: 45px;
+}
+
+.banner_text p {
+    font-family: var(--light-font);
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 80px;
+    line-height: 26px;
+
+}
+
+.sbp_upper_img img,.sbp_lower_img img{
+    box-shadow: rgba(22, 22, 22, 0.3) 0px 2px 8px 0px;
+}
+
+.single_banner_portfolio{
+    position: relative;
+    padding: 80px;
+    height: 500px;
+}
+
+.sbp_upper_img {
+	width: 60%;
+	height: auto;
+	position: absolute;
+	z-index: 99;
+	top: 125px;
+	right: 50px;
+}
+.sbp_lower_img{
+    width: 60%;
+    position: absolute;
+    z-index: 9;
+}
+
+
+/* ============================================== */
+/* ============   BANNER AREA END   ============= */
+/* ============================================== */
+
+
+
+/* ============================================= */
+/* ============  ABOUT AREA START  ============= */
+/* ============================================= */
+
+.about_img img{
+    box-shadow: rgba(22, 22, 22, 0.3) 0px 2px 8px 0px;
+}
+
+.about_text .row{
+    padding-top: 50px;
+}
+
+.abt_txt_upper p{
+    font-family: var(--light-font);
+    font-size: 16px;
+}
+
+.abt_txt_mid_info{
+    padding: 0 10px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--selected-theme-color);
+    margin-bottom: 20px;
+}
+
+.abt_txt_mid_info span strong{
+    color: var(--dark-black);
+    font-family: var(--strong-font);
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.abt_txt_mid_info span{
+    color: var(--dark-black);
+    font-family: var(--strong-font);
+    font-weight: 400;
+    font-size: 20px;
+
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    
+}
+
+.abt_txt_mid_info a{
+    color: var(--dark-black);
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+}
+
+.abt_txt_mid_info span:hover{
+    color: var(--selected-theme-color);
+}
+
+.abt_txt_mid_info span a:hover{
+    color: var(--selected-theme-color);
+}
+
+
+/* ============================================= */
+/* ============   ABOUT AREA END   ============= */
+/* ============================================= */
+
+
+
+
+/* ============================================== */
+/* ============  BRANDS AREA START  ============= */
+/* ============================================== */
+
+.brands_area{
+    background: var(--deep-light-white);
+    padding: 60px 0;
+}
+
+.brands_logo{
+    display: flex;
+    justify-items : center;
+    align-items: center;
+}
+
+.brands_logo_2{
+    margin-bottom: 60px;
+}
+
+/* ============================================== */
+/* ============   BRANDS AREA END   ============= */
+/* ============================================== */
+
+
+
+
+
+/* =============================================== */
+/* ============  SERVICE AREA START  ============= */
+/* =============================================== */
+
+.single_service{
+    box-shadow: rgba(22, 22, 22, .3) 0px 2px 8px 0px;
+    padding: 15px;
+
+    margin-bottom: 30px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.service_icon img{
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.single_service:hover{
+    box-shadow: rgba(22, 22, 22, .5) 0px 2px 8px 0px;
+    transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    -o-transform: scale(1.025);
+}
+
+.single_service:hover .service_icon img{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+
+.service_icon img{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.service_icon{
+    width: 100%;
+    text-align: center;
+}
+
+.service_text {
+	display: inline-block;
+}
+
+.service_text h3{
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--strong-font);
+    margin-bottom: 0;
+    color: var(--dark-black);
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.single_service:hover .service_text h3{
+    color: var(--selected-theme-color);
+}
+
+.service_text p{
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--light-font);
+    color: var(--dark-black);
+    margin: 0;
+}
+/* =============================================== */
+/* =============  SERVICE AREA END  ============== */
+/* =============================================== */
+
+
+
+
+
+/* =============================================== */
+/* ============  REVIEWS AREA START  ============= */
+/* =============================================== */
+
+.reviews_area{
+    background: url(../images/reviews2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.reviews_cover{
+    background: rgba(22, 22, 22, .4);
+    height: 100%;
+}
+
+/* .reviews_area .section_title .title_text p{
+    background: var(--selected-theme-color);
+    color: var(--white);
+    display: inline-block;
+    line-height: 1;
+} */
+
+.reviews_area .section_title .title_text h2{
+    color: var(--deep-light-white);
+}
+
+.single_review{
+    background: #fff;
+    /*background-color: var(--theme3-color);
+    */position: relative;
+    padding: 50px 20px;
+    box-shadow: rgba(22, 22, 22, 0.4) 0px 2px 8px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 10px 0;
+}
+
+.review_img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: rgba(22, 22, 22, 0.4) 0px 2px 8px 0px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+.review_text{
+    display: inline-block;
+    /* background-color: var(--theme1-color); */
+    margin-left: 170px;
+    padding: 0;
+}
+
+.review_name{   
+    display: inline-block;
+    width: 49%;
+    padding: 0;
+    margin: 0;
+    
+}
+.review_info_upper h3{
+    font-family: var(--strong-font);
+    color: var(--selected-theme-color);
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.review_ratings{
+    display: inline-block;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.review_ratings i {
+    color: var(--selected-theme-color);
+    font-size: 20px;
+}
+
+.review_info_lower p{
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 10px; 
+    font-style: italic;
+}
+
+.reviews_cover .container{
+    position: relative;
+}
+
+.left_btn, .right_btn {
+    height: 40px;
+    width: 40px;
+    background: var(--white);
+    color: var(--selected-theme-color);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 43%;
+    z-index: 999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: rgba(22, 22, 22, 0.3) 0px 2px 8px 0px;
+}
+
+.left_btn, .right_btn i{
+    font-size: 32px;
+}
+
+.left_btn{
+    left: -30px;
+}
+
+.right_btn{
+    right: -30px;
+}
+
+
+/* =============================================== */
+/* =============  REVIEWS AREA END  ============== */
+/* =============================================== */
+
+/* =============================================== */
+/* ============  CONTACT AREA START  ============= */
+/* =============================================== */
+
+
+.single_contact{
+    width: 100%;
+    padding: 15px 20px;
+    box-shadow: rgba(22, 22, 22, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+}
+
+
+.single_contact:hover i{
+    /* THEME COLOR 1 */
+    color: rgba(252, 66, 66, 1);
+
+     /* THEME COLOR 2 */
+    /* color: rgb(117, 98, 225, 1) ; */
+}
+
+.single_contact i{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+
+     /* THEME COLOR 1 */
+    color: rgba(252, 66, 66, .8);
+
+     /* THEME COLOR 2 */
+    /* color: rgb(117, 98, 225, .8) ; */
+
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+}
+
+.single_contact span{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-black);
+}
+
+
+.contact_text h3{
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 7px;
+    text-transform: capitalize;
+    color: var(--dark-black);
+}
+.contact_text p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+    color: var(--dark-black);
+}
+
+.contact_icon{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact_icon a{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--selected-theme-color);
+    box-shadow: rgba(22, 22, 22, 0.3) 0px 2px 8px 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+
+.contact_form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid var(--selected-theme-color);
+    font-family: var(--light-font);
+    font-weight: 400;
+    font-size: 18px;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact_form textarea {
+    resize: none;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid var(--selected-theme-color);
+    font-family:  var(--light-font);
+    font-weight: 400;
+    font-size: 18px;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+.contact_icon{
+    text-align: center;
+}
+
+.contact_icon a{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--selected-theme-color);
+    box-shadow: rgba(22, 22, 22, 0.3) 0px 2px 8px 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.contact_icon a i{
+    font-size: 18px;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.contact_icon a:hover{
+    background: var(--selected-theme-color);
+}
+
+.contact_icon a:hover i{
+    color: var(--white);
+}
+/* =============================================== */
+/* =============  CONTACT AREA END  ============== */
+/* =============================================== */
+
+
+
